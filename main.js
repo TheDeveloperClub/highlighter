@@ -1,5 +1,5 @@
 function init(){
-	console.log("Hello")
+	console.log("Welcome!")
 
 	console.log(text.innerText)
 }
