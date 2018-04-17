@@ -1,5 +1,4 @@
 function init(){
 	console.log("Welcome!")
-
-	console.log(text.innerText)
+	text.innerHTML = (text.innerText).replace(/./g, (a)=>{return "<span class=giraffe>"+a+"</span>"})
 }
