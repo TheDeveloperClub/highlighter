@@ -4,6 +4,16 @@
 function init(){
 	console.log("Welcome!")
 	text.innerHTML = (text.innerText).replace(/./g, (a,o)=>{return "<span class=giraffe id="+o+">"+a+"</span>"})
-	text.onmouseup = (x)=>{console.log(1)}
+	text.onmouseup = (x)=>{
+		console.log(1)
+	}
 	//window.getSelection().anchorNode.parentElement.style.background = "#00ff00"
+}
+
+function to(start,end,func){
+	if(start<end){
+		for(i=start;i<end;i++){
+			func(i)
+		}
+	}
 }
